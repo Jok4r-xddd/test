@@ -1,6 +1,8 @@
+using LeaveManagementSystem.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MyProject.Web.Data;
+using System.Reflection;
 
 namespace MyProject.Web
 {
@@ -19,6 +21,9 @@ namespace MyProject.Web
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddScoped<ILeaveTypesService, LeaveTypesService>();
+            builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             var app = builder.Build();
 

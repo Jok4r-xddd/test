@@ -13,9 +13,10 @@ using System.Runtime.InteropServices;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using LeaveManagementSystem.Services;
 
+
 namespace LeaveManagementSystem.Controllers
 {
-    [Authorize(Roles = "Administrator")]
+    [Authorize(Roles = Roles.Administrator)]
     public class LeaveTypesController(ILeaveTypesService _leaveTypesService) : Controller
     {
         private const string NameExistsValidationMessage = "This name already exists. Try something different!";

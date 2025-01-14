@@ -102,7 +102,7 @@ namespace MyProject.Web.Data.Migrations
                         {
                             Id = "4373316b-aa73-43f4-8f05-84a9cd372250",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "bfe0d9ea-0c7b-4149-b092-7495b740c26d",
+                            ConcurrencyStamp = "7572304c-bfe0-4b18-bce5-63f75444b233",
                             DateOfBirth = new DateOnly(2000, 12, 12),
                             Email = "admin@localhost.com",
                             EmailConfirmed = true,
@@ -111,9 +111,9 @@ namespace MyProject.Web.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGva6NCxjuaadeX5m0U8ku0GZh32ewR/VwtwhtMPjtFgeVewn5+s5ofosPHkzDQdDQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGkzqkWf1/8F4o98cb7PNwp2jlqfmaOseWdeFN+Zi7J4SJiAYfcYn9AjKYjTqGzGcA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d599feba-c8f5-4066-ab28-66045d2c10bb",
+                            SecurityStamp = "cb30f97c-db34-45e9-b713-0bd33d0a7e21",
                             TwoFactorEnabled = false,
                             UserName = "admin@localhost.com"
                         });

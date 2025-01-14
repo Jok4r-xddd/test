@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyProject.Web.Data;
 
@@ -11,9 +12,11 @@ using MyProject.Web.Data;
 namespace MyProject.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250111101650_ExtendedUserTable")]
+    partial class ExtendedUserTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -102,7 +105,7 @@ namespace MyProject.Web.Data.Migrations
                         {
                             Id = "4373316b-aa73-43f4-8f05-84a9cd372250",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "bfe0d9ea-0c7b-4149-b092-7495b740c26d",
+                            ConcurrencyStamp = "c949ac7a-19f0-408d-a2ac-6137f74b1bbd",
                             DateOfBirth = new DateOnly(2000, 12, 12),
                             Email = "admin@localhost.com",
                             EmailConfirmed = true,
@@ -111,9 +114,9 @@ namespace MyProject.Web.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LOCALHOST.COM",
                             NormalizedUserName = "ADMIN@LOCALHOST.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGva6NCxjuaadeX5m0U8ku0GZh32ewR/VwtwhtMPjtFgeVewn5+s5ofosPHkzDQdDQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEO+RIsHEnqGCj3eZ1HmT2yusY5MplwVpF4o0clNxtQWhMQWKsHe+INOx7xOtBLx8xw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d599feba-c8f5-4066-ab28-66045d2c10bb",
+                            SecurityStamp = "3fa05b59-7487-425f-b8c2-37d7290bba8c",
                             TwoFactorEnabled = false,
                             UserName = "admin@localhost.com"
                         });

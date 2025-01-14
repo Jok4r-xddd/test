@@ -15,6 +15,7 @@ using LeaveManagementSystem.Services;
 
 namespace LeaveManagementSystem.Controllers
 {
+    [Authorize(Roles = "Administrator")]
     public class LeaveTypesController(ILeaveTypesService _leaveTypesService) : Controller
     {
         private const string NameExistsValidationMessage = "This name already exists. Try something different!";

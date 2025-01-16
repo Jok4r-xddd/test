@@ -5,3 +5,6 @@ global using Microsoft.AspNetCore.Identity;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.AspNetCore.Mvc.RazorPages;
 global using LeaveManagementSystem.Commons;
+global using LeaveManagementSystem.Models.Period;
+global using LeaveManagementSystem.Services;
+global using LeaveManagementSystem.Models.LeaveType;

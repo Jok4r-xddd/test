@@ -26,6 +26,7 @@ namespace MyProject.Web
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddScoped<ILeaveTypesService, LeaveTypesService>();
+            builder.Services.AddScoped<IPeriodsService, PeriodsService>();
             builder.Services.AddTransient<IEmailSender, EmailSender>();
             builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 

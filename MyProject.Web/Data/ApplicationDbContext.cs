@@ -8,6 +8,8 @@ namespace MyProject.Web.Data
     public class ApplicationDbContext : IdentityDbContext<AppUser>
     {
         public DbSet<LeaveType> LeaveTypes { get; set; }
+        public DbSet<LeaveAllocation> LeaveAllocations { get; set; }
+        public DbSet<Period> Periods { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
